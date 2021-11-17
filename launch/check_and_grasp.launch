@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<!-- 同时启动机械臂状态检查和抓取执行 -->
+<launch>
+  <node name="baxter_state_checker" pkg="baxter_go_grasp" type="get_baxter_state.py"  output="screen"/>
+  <node name="baxter_grasp" pkg="baxter_go_grasp" type="baxter_grasp.py"  output="screen"/>  
+</launch>

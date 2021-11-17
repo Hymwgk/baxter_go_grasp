@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<!-- 接收末端执行器姿态执行抓取-->
+<launch>
+  <node name="baxter_grasp" pkg="baxter_go_grasp" type="baxter_grasp.py"  output="screen"/>  
+</launch>
